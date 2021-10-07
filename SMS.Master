@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SMS.master.cs" Inherits="Student_Management_System.SMS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <center>
+                <h1>Basic Student Management System</h1>
+                <hr />
+            <div style="background-color:aliceblue">
+                <asp:Label ID="LabUserLogin" runat="server" Text=""></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkCourse" runat="server" OnClick="LnkCourse_Click">Course</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkTeacher" runat="server" OnClick="LnkTeacher_Click">Teacher</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkStudent" runat="server" OnClick="LnkStudent_Click">Student</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkAdmin" runat="server" OnClick="LnkAdmin_Click" >Admin</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkAttendance" runat="server" OnClick="LnkAttendance_Click" >Attendance</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkOnlineExam" runat="server" OnClick="LnkOnlineExam_Click" >OnlineExam</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkLibrary" runat="server" OnClick="LnkLibrary_Click" >Library</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                 <asp:LinkButton ID="LnkEmployee" runat="server" OnClick="LnkEmployee_Click" >Employee</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="LnkLogout" runat="server" OnClick="LnkLogout_Click">Logout</asp:LinkButton>&nbsp;&nbsp;&nbsp;
+                
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </center>
+    </form>
+</body>
+</html>
